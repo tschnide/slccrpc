@@ -34,6 +34,11 @@
         </style>
 
     </head>
+    <script>
+        $('#backToTopBtn').click(function(){
+            $('html,body').animate({scrollTop:0}, 'slow');return false;
+        });
+    </script>
     <body>
         <!--Navigation Bar-->
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -60,7 +65,7 @@
         </nav>
         <!--End Nav-->
 
-        <div class="container">
+        <div class="container" id="top">
             <div class="jumbotron">
                 <h1 class="text-center">SLCC RPC</h1>
                 <p class="text-center">Salt Lake Community College Raspberry Pi Club</p>
@@ -88,7 +93,7 @@
         <div class="panel panel-default">
         <footer>
             
-            <a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
+            <a href="#top" id="backtoTopBtn"><span class="glyphicon glyphicon-chevron-up"></span></a>
             <br><br>
             Created by: RPC | Email: soon to come...
             
